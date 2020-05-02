@@ -10,7 +10,7 @@ docker build -t manifest_error_injection:latest .
 cd ../bool_injection
 docker build -t bool_injection:latest .
 cd ../post_injection
-docker build post_injection:latest .
+docker build -t post_injection:latest .
 
 echo "build is success"
 

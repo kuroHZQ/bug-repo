@@ -28,6 +28,6 @@ if (isset($_POST["message"])) {
 
 $sql1 = "SELECT * FROM storage_xss WHERE userId = '".$_SESSION['user']."'";
 $res1 = $dbConnectWidth->query($sql1);
-require_once TPMELATE."/xss_2.html";
+require_once TPMELATE."/xss_2/index.html";
 
 

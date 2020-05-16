@@ -12,6 +12,6 @@ if (isset($_GET["id"])) {
         }
     }
 }
-require_once TPMELATE."/xss_1.html";
+require_once TPMELATE."/xss_1/index.html";
 
 

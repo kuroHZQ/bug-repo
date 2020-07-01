@@ -1,5 +1,7 @@
 FROM ubuntu:basic
 MAINTAINER kuroHZQ
+RUN groupadd -r user_grp && useradd -r -g user_grp user
+USER user
 COPY sql /root/
 RUN /etc/init.d/mysql start &&\
     mysql -e "grant all privileges on *.* to 'root'@'%' identified by 'toor';"&&\
